@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Arhaminer - Scanner</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				background-color: #0a0a0a;
+				color: #fff;
+				margin: 0;
+				padding: 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100vh;
+			}
+			.container {
+				text-align: center;
+				padding: 20px;
+				border-radius: 10px;
+				background-color: #222;
+				box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+			}
+			h1 {
+				font-size: 36px;
+				margin-bottom: 20px;
+			}
+			label {
+				font-size: 18px;
+				margin-bottom: 10px;
+				display: block;
+			}
+			input[type='text'] {
+				padding: 10px;
+				font-size: 16px;
+				width: 300px;
+				border: 2px solid #777;
+				border-radius: 5px;
+				background-color: #333;
+				color: #fff;
+				margin-bottom: 20px;
+			}
+			button {
+				padding: 10px 20px;
+				font-size: 18px;
+				background-color: #4caf50;
+				color: #fff;
+				border: none;
+				border-radius: 5px;
+				cursor: pointer;
+				transition: background-color 0.3s ease;
+			}
+			button:hover {
+				background-color: #45a049;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Arhaminer</h1>
+			<form action="/scan" method="post">
+				<label for="domain">Masukkan Domain</label>
+				<br />
+				<input
+					type="text"
+					id="domain"
+					name="domain"
+					placeholder="contoh: target.com" />
+				<br />
+				<button type="submit">scan</button>
+			</form>
+		</div>
+	</body>
+</html>
